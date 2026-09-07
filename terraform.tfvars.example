@@ -1,0 +1,14 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is gitignored.
+
+# Where to apply the policies. One of:
+#   parent = "organizations/123456789012"
+#   parent = "folders/123456789012"
+#   parent = "projects/ai-sec-499516"
+parent = "organizations/123456789012"
+
+# Project used for provider API quota/billing attribution (optional).
+billing_project = "ai-sec-499516"
+
+# Data-residency allow-list for constraints/gcp.resourceLocations.
+#   ["in:us-locations"]  ["in:eu-locations"]  ["us-central1", "us-east1"]
+allowed_locations = ["in:us-locations"]
