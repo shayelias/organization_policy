@@ -37,7 +37,7 @@ terraform apply
 ```hcl
 parent = "organizations/123456789012"  # org-wide  (needs roles/orgpolicy.policyAdmin on the org)
 parent = "folders/123456789012"        # a folder  (needs policyAdmin on the folder)
-parent = "projects/ai-sec-499516"      # one project
+parent = "projects/123456789012"      # one project
 ```
 
 ### Data residency (`allowed_locations`)
